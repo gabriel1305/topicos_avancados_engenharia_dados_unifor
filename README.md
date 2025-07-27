@@ -40,22 +40,16 @@ Ideal para aprendizado de ingestão e processamento de dados em tempo real.
 - Kafka e MongoDB rodando localmente ou via Docker Compose
 - Dependências Python instaladas (`pip install -r requirements.txt`)
 
-### Usando Docker (exemplo)
+🧠 Possíveis Extensões
 
-```yaml
-services:
-  zookeeper:
-    image: wurstmeister/zookeeper
-    ports:
-      - "2181:2181"
-  kafka:
-    image: wurstmeister/kafka
-    ports:
-      - "9092:9092"
-    environment:
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-  mongo:
-    image: mongo
-    ports:
-      - "27017:27017"
+    Dashboard mais avançado com gráficos históricos e alertas
+
+    Inclusão de latência, logging ou métricas de performance
+
+    Containerização completa com Docker para cada parte do pipeline
+
+    Estratégias de particionamento Kafka ou escalabilidade de consumidores
+
+📄 Licença
+
+Este projeto está licenciado sob a MIT License. Fique à vontade para utilizar, modificar ou contribuir. Para uso comercial, consulte os termos da licença.
