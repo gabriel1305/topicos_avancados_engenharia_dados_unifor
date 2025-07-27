@@ -2,6 +2,8 @@
 
 Este projeto simula um sensor que gera dados de temperatura e umidade, os envia via Kafka, armazena no MongoDB e apresenta em tempo real por meio de Streamlit.
 
+---
+
 ## 📁 Estrutura do Projeto
 
 ```bash
@@ -14,34 +16,61 @@ Este projeto simula um sensor que gera dados de temperatura e umidade, os envia 
 ├── docker-compose.yml      # (Opcional) Ambiente Kafka + MongoDB
 └── README.md               # Este arquivo
 
-
-## 🎯 Objetivo
+🎯 Objetivo
 
 Construir um pipeline simples para:
 
-- Gerar dados sintéticos de temperatura e umidade via `data_generate.py`
-- Enviar dados para um tópico Kafka (`producer.py`)
-- Consumir dados do Kafka e salvar no MongoDB (`consumer.py`)
-- Visualizar dados em tempo real com `app.py` via Streamlit
+    Gerar dados sintéticos de temperatura e umidade via data_generate.py
+
+    Enviar dados para um tópico Kafka (producer.py)
+
+    Consumir dados do Kafka e salvar no MongoDB (consumer.py)
+
+    Visualizar dados em tempo real com app.py via Streamlit
 
 Ideal para aprendizado de ingestão e processamento de dados em tempo real.
+🧰 Tecnologias Utilizadas
 
-## 🧰 Tecnologias
+    Python – Código principal
 
-- **Python** – código principal
-- **Kafka** – stream de mensagens entre produtor e consumidor
-- **MongoDB** – armazenamento NoSQL dos dados coletados
-- **Streamlit** – dashboard simples e interativo para visualização
-- **confluent_kafka** ou **kafka-python** – cliente Kafka Python
-- **pymongo** – driver MongoDB para Python
+    Kafka – Stream de mensagens entre produtor e consumidor
 
-## 🚀 Como Executar
+    MongoDB – Armazenamento NoSQL dos dados coletados
 
-### Pré-requisitos
+    Streamlit – Dashboard simples e interativo para visualização
 
-- Python 3.8+
-- Kafka e MongoDB rodando localmente ou via Docker Compose
-- Dependências Python instaladas (`pip install -r requirements.txt`)
+    confluent_kafka ou kafka-python – Cliente Kafka para Python
+
+    pymongo – Driver MongoDB para Python
+
+🚀 Como Executar
+Pré-requisitos
+
+    Python 3.8+
+
+    Kafka e MongoDB rodando localmente ou via Docker Compose
+
+    Dependências Python instaladas:
+
+pip install -r requirements.txt
+
+Passos básicos
+
+    Inicie os containers Kafka e MongoDB (caso use Docker Compose):
+
+docker-compose up -d
+
+    Execute o produtor de dados:
+
+python producer.py
+
+    Inicie o consumidor:
+
+python consumer.py
+
+    Inicie o dashboard:
+
+streamlit run app.py
 
 🧠 Possíveis Extensões
 
@@ -55,4 +84,6 @@ Ideal para aprendizado de ingestão e processamento de dados em tempo real.
 
 📄 Licença
 
-Este projeto está licenciado sob a MIT License. Fique à vontade para utilizar, modificar ou contribuir. Para uso comercial, consulte os termos da licença.
+Este projeto está licenciado sob a MIT License.
+Fique à vontade para utilizar, modificar ou contribuir.
+Para uso comercial, consulte os termos da licença.
