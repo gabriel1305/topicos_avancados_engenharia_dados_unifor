@@ -18,7 +18,7 @@ Este projeto simula um sensor que gera dados de temperatura e umidade, os envia 
 
 ---
 
-🎯 Objetivo
+## 🎯Objetivo
 
 Construir um pipeline simples para:
 
@@ -31,3 +31,39 @@ Consumir dados do Kafka e salvar no MongoDB (consumer.py)
 Visualizar dados em tempo real com app.py via Streamlit
 
 Ideal para aprendizado de ingestão e processamento de dados em tempo real.
+
+
+🧰 Tecnologias Utilizadas
+
+Python – Código principal
+
+Kafka – Stream de mensagens entre produtor e consumidor
+
+MongoDB – Armazenamento NoSQL dos dados coletados
+
+Streamlit – Dashboard simples e interativo para visualização
+
+confluent_kafka ou kafka-python – Cliente Kafka para Python
+
+pymongo – Driver MongoDB para Python
+
+
+
+
+🧠 Possíveis Extensões
+
+Dashboard mais avançado com gráficos históricos e alertas
+
+Inclusão de latência, logging ou métricas de performance
+
+Containerização completa com Docker para cada parte do pipeline
+
+Estratégias de particionamento Kafka ou escalabilidade de consumidores
+
+
+
+📄 Licença
+
+Este projeto está licenciado sob a MIT License.
+Fique à vontade para utilizar, modificar ou contribuir.
+Para uso comercial, consulte os termos da licença.
