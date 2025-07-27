@@ -16,7 +16,7 @@ Este projeto simula um sensor que gera dados de temperatura e umidade, os envia 
 ├── docker-compose.yml      # (Opcional) Ambiente Kafka + MongoDB
 └── README.md               # Este arquivo
 
-
+---
 
 🎯 Objetivo
 
