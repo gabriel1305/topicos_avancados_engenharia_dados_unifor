@@ -6,7 +6,7 @@ Este projeto simula um sensor que gera dados de temperatura e umidade, os envia 
 
 ## 📁 Estrutura do Projeto
 
-```bash
+
 ├── app.py                  # Aplicação Streamlit para visualização dos dados
 ├── consumer.py             # Consumidor Kafka que persiste dados no MongoDB
 ├── producer.py             # Produtor Kafka que envia os dados gerados
