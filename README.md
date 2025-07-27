@@ -4,13 +4,16 @@ Este projeto simula um sensor que gera dados de temperatura e umidade, os envia 
 
 ## 📁 Estrutura do Projeto
 
-├── app.py # Aplicação Streamlit para visualização dos dados
-├── consumer.py # Consumidor Kafka que persiste dados no MongoDB
-├── producer.py # Produtor Kafka que envia os dados gerados
-├── data_generate.py # Script que simula geração dos dados de sensores
-├── requirements.txt # Dependências necessárias
-├── Dockerfile / docker-compose.yml (opcional) # Ambiente Kafka + MongoDB
-└── README.md # Este arquivo
+```bash
+├── app.py                  # Aplicação Streamlit para visualização dos dados
+├── consumer.py             # Consumidor Kafka que persiste dados no MongoDB
+├── producer.py             # Produtor Kafka que envia os dados gerados
+├── data_generate.py        # Script que simula geração dos dados de sensores
+├── requirements.txt        # Dependências necessárias
+├── Dockerfile              # (Opcional) Configuração para container do app
+├── docker-compose.yml      # (Opcional) Ambiente Kafka + MongoDB
+└── README.md               # Este arquivo
+
 
 ## 🎯 Objetivo
 
