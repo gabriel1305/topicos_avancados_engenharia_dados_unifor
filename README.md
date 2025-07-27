@@ -16,7 +16,7 @@ Este projeto simula um sensor que gera dados de temperatura e umidade, os envia 
 ├── docker-compose.yml      # (Opcional) Ambiente Kafka + MongoDB
 └── README.md               # Este arquivo
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Construir um pipeline simples para:
 
@@ -29,7 +29,7 @@ Construir um pipeline simples para:
     Visualizar dados em tempo real com app.py via Streamlit
 
 Ideal para aprendizado de ingestão e processamento de dados em tempo real.
-🧰 Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas
 
     Python – Código principal
 
@@ -43,7 +43,7 @@ Ideal para aprendizado de ingestão e processamento de dados em tempo real.
 
     pymongo – Driver MongoDB para Python
 
-🚀 Como Executar
+## 🚀 Como Executar
 Pré-requisitos
 
     Python 3.8+
@@ -71,8 +71,7 @@ python consumer.py
     Inicie o dashboard:
 
 streamlit run app.py
-
-🧠 Possíveis Extensões
+## 🧠 Possíveis Extensões
 
     Dashboard mais avançado com gráficos históricos e alertas
 
